@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All rights reserved"
+[[mods]]
+modId="smoothmenu"
+version="${file.jarVersion}"
+displayName="Smooth Menu"
+logoFile="logo.png"
+authors="BookerCatch"
+description="Uncaps the main menu's framerate limit."
+
+[modproperties.smoothmenu]
+    catalogueItemIcon="minecraft:redstone" # custom icon for Catalogue's mod list
+    configBackground="minecraft:textures/block/stone_bricks.png" # background for Configured's generated config screen
+
+[[dependencies.smoothmenu]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.smoothmenu]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
